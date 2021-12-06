@@ -6,6 +6,12 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
+                        cwd: "./src",
+                        src: ["**.txt"],
+                        dest: "./dist/scripts"
+                    },
+                    {
+                        expand: true,
                         cwd: "./static",
                         src: ["**"],
                         dest: "./dist/static"
@@ -39,7 +45,7 @@ module.exports = function (grunt) {
                 tasks: ["ts"]
             },
             public: {
-                files: ["public/**/*"],
+                files: ["src/**/*"],
                 tasks: ["copy"]
               },
             views: {
