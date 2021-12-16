@@ -1,6 +1,4 @@
 import fs = require('fs')
-import { Serializer } from 'v8'
-import { markAsUntransferable } from 'worker_threads'
 
 let from: number[][] = []
 let to: number[][] = []
